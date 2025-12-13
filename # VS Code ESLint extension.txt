@@ -1,0 +1,68 @@
+# VS Code ESLint extension
+[![Build Status](https://dev.azure.com/vscode/vscode-eslint/_apis/build/status%2Fvscode-eslint?branchName=main)](https://dev.azure.com/vscode/vscode-eslint/_build?definitionId=51)
+
+Integrates [ESLint](http://eslint.org/) into VS Code. If you are new to ESLint check the [documentation](http://eslint.org/).
+
+The extension uses the ESLint library installed in the opened workspace folder.
+If the folder doesn't provide one, the extension looks for a global install version.
+If you haven't installed ESLint either locally or globally, do so by running:
+
+**Local install (recommended):**
+
+```bash
+# npm
+npm install --save-dev eslint
+
+# yarn
+yarn add --dev eslint
+
+# pnpm
+pnpm add --save-dev eslint
+
+# bun
+bun add --dev eslint
+```
+
+**Global install:**
+
+```bash
+# npm
+npm install -g eslint
+
+# yarn
+yarn global add eslint
+
+# pnpm
+pnpm add -g eslint
+
+# bun
+bun add -g eslint
+```
+
+On new projects you might need to create an ESLint configuration file.
+For ESLint v9 and later (or v8.57+ with flat config), this should be one of:
+
+- eslint.config.js (most common)
+- eslint.config.mjs
+- eslint.config.cjs
+- eslint.config.ts
+- eslint.config.mts
+
+You can generate a starter config by running:
+
+`npx eslint --init`
+
+Read more about [ESLint CLI](https://eslint.org/docs/latest/use/command-line-interface).
+
+For projects using older ESLint versions (< 8.57), use a legacy `.eslintrc` file (`.eslintrc.json`, `.eslintrc.js`, etc.).
+
+If you're using the legacy version, consider reading [how to migrate to flat config](https://eslint.org/docs/latest/use/configure/migration-guide).
+
+# Index
+* [Release Notes](#release-notes)
+* [Settings Options](#settings-options)
+* [Settings Migration](#settings-migration)
+* [Commands](#commands)
+* [Using the extension with VS Code's task running](#using-the-extension-with-vs-codes-task-running)
+* [Using ESLint to validate TypeScript files](#using-eslint-to-validate-typescript-files)
+* [ESLint 6.x](#eslint-6x)

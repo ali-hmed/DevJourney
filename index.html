@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJourney | The New Developer Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Dev.logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Dev<span class="highlight">Journey</span>.</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="badge">New Developer</span>
+            <h1 class="hero-title">Documenting My Journey from <span class="gradient-text">Hello World</span> to
+                Frontend Developer.</h1>
+            <p class="hero-text">Welcome to my digital garden. I write about learning web development, debugging code,
+                and the tools I love.</p>
+            <div class="hero-buttons">
+                <a href="#blog" class="btn btn-primary">Read Latest Posts</a>
+                <a href="#about" class="btn btn-secondary">More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-content">
+                <span class="badge">About Me</span>
+                <h2 class="about-title">Hi, I'm <span class="gradient-text">Ali</span>.</h2>
+                <p class="about-text">
+                    I'm a passionate self-taught developer building things for the web. My journey started with a simple
+                    "Hello World" and has grown into a love for clean code and responsive design.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you can find me exploring new coffee shops, reading sci-fi novels, or trying to
+                    center a div without crying.
+                </p>
+                <div class="skills-wrapper">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <img src="https://i.pinimg.com/1200x/a7/fb/c4/a7fbc4bb85f222c8767964c6e0607b0a.jpg"
+                    alt="Developer Portrait" class="about-image">
+                <div class="about-image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+
+                <!-- Blog Card 1 -->
+
+                <!-- <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image placeholder-gradient-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">CSS</span>
+                            <span class="card-date">Oct 24, 2023</span>
+                        </div>
+                        <h3 class="card-title">Mastering Flexbox in 15 Minutes</h3>
+                        <p class="card-excerpt">Flexbox is a game changer for page layout. Here is how I finally
+                            understood align-items vs justify-content.</p>
+                        <a href="#" class="card-link">Read Article &rarr;</a>
+                    </div>
+                </article> -->
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="images/vscode-hero.png" alt="VS Code Extensions" class="card-image"
+                            style="object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">JavaScript</span>
+                            <span class="card-date">Nov 02, 2023</span>
+                        </div>
+                        <h3 class="card-title">Why I Love VS Code Extensions</h3>
+                        <p class="card-excerpt">My productivity skyrocketed after installing these 5 extensions. Number
+                            3 will surprise you!</p>
+                        <a href="article1.html" target="_blank" class="card-link">Read Article &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image placeholder-gradient-3"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag">Career</span>
+                            <span class="card-date">Nov 15, 2023</span>
+                        </div>
+                        <h3 class="card-title">Imposter Syndrome is Real</h3>
+                        <p class="card-excerpt">Every new developer feels it. Here is how I manage the feeling of not
+                            knowing enough.</p>
+                        <a href="imposter-syndrome.html" class="card-link">Read Article &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image"
+                            style="background: #111; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2rem; border: 1px solid #333;">
+                            <span style="font-family: serif; font-style: italic;">I&F</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-tag"
+                                style="background-color: #333; color: #ddd; border: 1px solid #555;">Culture</span>
+                            <span class="card-date">Dec 14, 2023</span>
+                        </div>
+                        <h3 class="card-title">Ink & Frames</h3>
+                        <p class="card-excerpt">A deep dive into the 2D world. Investigating the art and culture of
+                            Anime, Manga, and Light Novels.</p>
+                        <a href="article3.html" class="card-link">Read Article &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image placeholder-project-1"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Dashboard</h3>
+                        <p class="project-desc">A full-featured admin dashboard with real-time data visualization and
+                            order management.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                            <span>ChartJS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm btn-secondary">Code</a>
+                            <a href="#" class="btn-sm btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image placeholder-project-2">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-desc">Minimalist weather application using OpenWeatherMap API with location
+                            detection.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm btn-secondary">Code</a>
+                            <a href="#" class="btn-sm btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image placeholder-project-3"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Manager</h3>
+                        <p class="project-desc">Productivity tool with drag-and-drop functionality and local storage
+                            persistence.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm btn-secondary">Code</a>
+                            <a href="#" class="btn-sm btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="contact-glass-card">
+
+                <!-- Contact Info Column -->
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Talk</h3>
+                    <p class="contact-desc">
+                        I'm currently open to new opportunities. Whether you have a question or just want to say hi,
+                        I'll try my best to get back to you!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon-label">EMAIL</span>
+                            <a href="mailto:hello@devjourney.com" class="contact-link">aliahmedxdev9@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-label">SOCIALS</span>
+                            <div class="mini-socials">
+                                <a href="https://x.com/ali_dev9" target="_blank" class="social-icon"
+                                    aria-label="Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/ali-hmed" target="_blank" class="social-icon"
+                                    aria-label="GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ali-hmed-92a4ba393?" target="_blank"
+                                    class="social-icon" aria-label="LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="event.preventDefault();" action="#"
+                        enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="John Doe" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Your message..." class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width"><a href="#home">Send
+                                Message</a></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2023 DevJourney. Built with ❤️ and Coffee.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navList.classList.remove('active');
+        }));
+    </script>
+</body>
+
+</html>
