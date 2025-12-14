@@ -407,6 +407,14 @@ footer {
     color: #1e293b;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
+.back-to-home{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.back-to-home:hover{
+    color: var(--accent-color);
+}
 
 /* Responsiveness */
 @media (max-width: 768px) {

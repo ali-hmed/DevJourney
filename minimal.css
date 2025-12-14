@@ -74,14 +74,9 @@ p {
 a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.2s;
-    border-bottom: 1px solid transparent;
+    
 }
 
-a:hover {
-    color: var(--gradient-start);
-    border-bottom-color: var(--gradient-start);
-}
 
 .container {
     max-width: 740px;
@@ -278,6 +273,12 @@ blockquote {
     body {
         font-size: 18px;
     }
+    .nav-link{
+        display: none;
+    }
+    .minimal-header {
+        padding: 0.1rem;
+    }
 
     .article-title {
         font-size: 2.5rem;
@@ -289,7 +290,7 @@ blockquote {
 
     .hero-image-wrapper {
         height: 50vh;
-        min-height: 300px;
+        min-height: 170px;
         margin-bottom: 2rem;
     }
 

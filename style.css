@@ -743,6 +743,7 @@ textarea.form-input {
 
     .nav-toggle {
         display: block;
+        margin-right: -10rem;
         z-index: 2000;
     }
 
@@ -751,7 +752,7 @@ textarea.form-input {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 120vw;
         background: rgba(15, 23, 42, 0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
@@ -760,8 +761,8 @@ textarea.form-input {
         z-index: 1000;
         transform: translateY(-100%);
         transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        gap: 2.5rem;
-        font-size: 1.5rem;
+        gap: 2rem;
+        font-size: 1rem;
     }
 
     .nav-list.active {
